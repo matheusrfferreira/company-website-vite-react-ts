@@ -1,0 +1,7 @@
+export { default as Home } from './home'
+export { default as AboutUs } from './about-us'
+export { default as Blog } from './blog'
+export { default as ContactUs } from './contact-us'
+export { default as OurProjects } from './our-projects'
+export { default as Services } from './services'
+export { default as NotFound } from './not-found'
