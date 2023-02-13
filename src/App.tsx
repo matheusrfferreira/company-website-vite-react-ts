@@ -10,11 +10,11 @@ function App() {
       <Header />
       <Routes>
         <Route index element={<Home />} />
-        <Route path="a" element={<AboutUs />} />
+        <Route path="about-us" element={<AboutUs />} />
         <Route path="services" element={<Services />} />
-        <Route path="nossos-projetos" element={<OurProjects />} />
+        <Route path="our-projects" element={<OurProjects />} />
         <Route path="blog" element={<Blog />} />
-        <Route path="fale-conosco" element={<ContactUs />} />
+        <Route path="contact-us" element={<ContactUs />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

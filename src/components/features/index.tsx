@@ -12,49 +12,7 @@ const Features: FC<FeaturesProps> = ({ features }) => {
   return (
     <Box p={4}>
       <Flex align="center" justify="center" wrap="wrap">
-        {features.map(({icon, title, text}: FeatureProps)=> (<Feature key={`key-${title}`} icon={icon} title={title} text={text} />))}
-        {/* <Feature
-          icon={<Icon as={WarningIcon} w={10} h={10} />}
-          title={'Lifetime Support'}
-          text={
-            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
-          }
-        />
-        <Feature
-          icon={<Icon as={WarningIcon} w={10} h={10} />}
-          title={'Unlimited Donations'}
-          text={
-            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
-          }
-        />
-        <Feature
-          icon={<Icon as={WarningIcon} w={10} h={10} />}
-          title={'Instant Delivery'}
-          text={
-            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
-          }
-        />
-        <Feature
-          icon={<Icon as={WarningIcon} w={10} h={10} />}
-          title={'Lifetime Support'}
-          text={
-            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
-          }
-        />
-        <Feature
-          icon={<Icon as={WarningIcon} w={10} h={10} />}
-          title={'Unlimited Donations'}
-          text={
-            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
-          }
-        />
-        <Feature
-          icon={<Icon as={WarningIcon} w={10} h={10} />}
-          title={'Instant Delivery'}
-          text={
-            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
-          }
-        /> */}
+        {features.map(({icon, title, text}: FeatureProps, index: number)=> (<Feature key={`feature-${index}`} icon={icon} title={title} text={text} />))}
       </Flex>
     </Box>
   )

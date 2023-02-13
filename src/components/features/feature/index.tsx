@@ -1,10 +1,10 @@
-import React, { FC, ReactElement } from 'react'
-import { Text, Stack, Flex } from '@chakra-ui/react'
+import React, { FC, ReactNode } from 'react'
+import { Text, Stack, Flex, Icon } from '@chakra-ui/react'
 
 export type FeatureProps = {
   title: string;
   text: string;
-  icon: ReactElement;
+  icon: any;
 }
 
 const Feature: FC<FeatureProps> = ({ title, text, icon }) => {
@@ -19,7 +19,7 @@ const Feature: FC<FeatureProps> = ({ title, text, icon }) => {
         rounded={'full'}
         bg={'gray.100'}
         mb={1}>
-        {icon}
+        <Icon as={icon}/>
       </Flex>
       <Text fontWeight={600}>{title}</Text>
       <Text color={'gray.600'}>{text}</Text>
